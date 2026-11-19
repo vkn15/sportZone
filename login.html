@@ -1,0 +1,219 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>SportsZone | Login</title>
+
+    <link rel="stylesheet" href="css/common.css" />
+
+    <link rel="stylesheet" href="css/login.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- ===========================
+            HEADER
+    ============================ -->
+
+    <header>
+      <div class="top-bar">
+        <div class="container top-bar-content">
+          <p>Welcome Back to SportsZone</p>
+        </div>
+      </div>
+
+      <nav class="navbar">
+        <div class="container navbar-content">
+          <a href="index.html" class="logo"> SportsZone </a>
+
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="products.html">Products</a></li>
+
+            <li><a href="categories.html">Categories</a></li>
+
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+
+          <div class="nav-icons">
+            <a href="wishlist.html">
+              <i class="fa-regular fa-heart"></i>
+
+              <span id="wishlist-count">0</span>
+            </a>
+
+            <a href="cart.html">
+              <i class="fa-solid fa-cart-shopping"></i>
+
+              <span id="cart-count">0</span>
+            </a>
+          </div>
+
+          <button id="menu-btn">
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </nav>
+
+      <div id="mobile-menu">
+        <a href="index.html">Home</a>
+
+        <a href="products.html">Products</a>
+
+        <a href="categories.html">Categories</a>
+
+        <a href="cart.html">Cart</a>
+
+        <a href="wishlist.html">Wishlist</a>
+
+        <a href="contact.html">Contact</a>
+      </div>
+    </header>
+
+    <!-- ===========================
+            LOGIN
+    ============================ -->
+
+    <section class="auth-page">
+      <div class="container">
+        <div class="auth-card">
+          <h1>Login</h1>
+
+          <p>Sign in to your SportsZone account.</p>
+
+          <form id="login-form">
+            <div class="form-group">
+              <label> Email Address </label>
+
+              <input type="email" id="login-email" required />
+            </div>
+
+            <div class="form-group">
+              <label> Password </label>
+
+              <input type="password" id="login-password" required />
+            </div>
+
+            <div class="form-options">
+              <label>
+                <input type="checkbox" id="remember-me" />
+
+                Remember Me
+              </label>
+
+              <a href="#"> Forgot Password? </a>
+            </div>
+
+            <button type="submit" class="auth-btn">Login</button>
+          </form>
+
+          <div class="auth-footer">
+            <p>
+              Don't have an account?
+
+              <a href="register.html"> Register Here </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ===========================
+            FOOTER
+    ============================ -->
+
+    <footer>
+      <div class="container footer-grid">
+        <div>
+          <h3>SportsZone</h3>
+
+          <p>
+            Premium sports equipment for athletes, fitness enthusiasts, and
+            beginners.
+          </p>
+        </div>
+
+        <div>
+          <h4>Quick Links</h4>
+
+          <a href="index.html">Home</a>
+
+          <a href="products.html">Products</a>
+
+          <a href="categories.html">Categories</a>
+
+          <a href="about.html">About</a>
+        </div>
+
+        <div>
+          <h4>Customer Service</h4>
+
+          <a href="wishlist.html">Wishlist</a>
+
+          <a href="cart.html">Cart</a>
+
+          <a href="contact.html">Contact</a>
+
+          <a href="register.html">Register</a>
+        </div>
+
+        <div>
+          <h4>Follow Us</h4>
+
+          <div class="social-icons">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="#">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>© 2026 SportsZone. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- ===========================
+            TOAST
+    ============================ -->
+
+    <div id="toast"></div>
+
+    <!-- ===========================
+         SCROLL TO TOP
+    ============================ -->
+
+    <button id="scroll-top" aria-label="Scroll To Top">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <!-- ===========================
+            SCRIPTS
+    ============================ -->
+
+    <script src="js/common.js"></script>
+
+    <script src="js/script.js"></script>
+
+    <script src="js/login.js"></script>
+  </body>
+</html>

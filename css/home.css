@@ -1,0 +1,431 @@
+/* ======================================================
+   SportsZone - Home Page Styles
+   File: home.css
+   Part 1
+====================================================== */
+
+/* ==========================
+   Hero Section
+========================== */
+
+.hero {
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hero-content {
+  min-height: 600px;
+}
+
+.hero-text {
+  animation: fadeLeft 0.8s ease;
+}
+
+.hero-text h1 {
+  max-width: 550px;
+}
+
+.hero-text p {
+  max-width: 520px;
+}
+
+.hero-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeRight 0.8s ease;
+}
+
+.hero-image img {
+  max-width: 550px;
+}
+
+/* ==========================
+   Hero Animations
+========================== */
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ==========================
+   Featured Categories
+========================== */
+
+.featured-categories {
+  background: #ffffff;
+}
+
+.category-card {
+  cursor: pointer;
+}
+
+.category-card img {
+  transition: 0.4s;
+}
+
+.category-card:hover img {
+  transform: scale(1.08);
+}
+
+.category-card h3 {
+  transition: 0.3s;
+}
+
+.category-card:hover h3 {
+  color: var(--primary);
+}
+
+/* ==========================
+   Featured Products
+========================== */
+
+.featured-products {
+  background: var(--light-gray);
+}
+
+.product-card {
+  position: relative;
+}
+
+.product-card .product-image {
+  overflow: hidden;
+}
+
+.product-card img {
+  transition: 0.4s;
+}
+
+.product-card:hover img {
+  transform: scale(1.08);
+}
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.rating i {
+  font-size: 0.9rem;
+}
+
+/* ==========================
+   Product Buttons
+========================== */
+
+.product-actions {
+  margin-top: auto;
+}
+
+.product-actions button {
+  font-size: 0.95rem;
+}
+
+.product-actions button i {
+  margin-right: 6px;
+}
+
+/* ==========================
+   Offer Banner
+========================== */
+
+.offer-banner {
+  background: linear-gradient(135deg, var(--primary), #0b58d4);
+}
+
+.offer-content {
+  min-height: 220px;
+}
+
+.offer-content h2 {
+  margin-bottom: 10px;
+}
+
+.offer-content p {
+  font-size: 1.1rem;
+}
+
+/* ==========================
+   Why Choose Us
+========================== */
+
+.features {
+  background: #ffffff;
+}
+
+.feature-card {
+  border: 1px solid transparent;
+}
+
+.feature-card:hover {
+  border-color: var(--primary);
+}
+
+.feature-card i {
+  transition: 0.3s;
+}
+
+.feature-card:hover i {
+  transform: scale(1.15);
+}
+/* ======================================================
+   SportsZone - Home Page Styles
+   File: home.css
+   Part 2
+====================================================== */
+
+/* ==========================
+   Brands Section
+========================== */
+
+.brands {
+  background: var(--white);
+}
+
+.brand-card {
+  cursor: pointer;
+}
+
+.brand-card img {
+  transition: var(--transition);
+}
+
+.brand-card:hover img {
+  transform: scale(1.08);
+}
+
+/* ==========================
+   Newsletter
+========================== */
+
+.newsletter {
+  position: relative;
+
+  overflow: hidden;
+}
+
+.newsletter::before {
+  content: "";
+
+  position: absolute;
+
+  width: 280px;
+
+  height: 280px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  top: -140px;
+
+  left: -80px;
+}
+
+.newsletter::after {
+  content: "";
+
+  position: absolute;
+
+  width: 250px;
+
+  height: 250px;
+
+  border-radius: 50%;
+
+  background: rgba(255, 255, 255, 0.08);
+
+  right: -80px;
+
+  bottom: -120px;
+}
+
+.newsletter-content {
+  position: relative;
+
+  z-index: 2;
+}
+
+.newsletter h2 {
+  font-size: 2rem;
+}
+
+#newsletter-form {
+  margin-top: 30px;
+}
+
+#newsletter-form input {
+  font-size: 1rem;
+}
+
+#newsletter-form input::placeholder {
+  color: #888;
+}
+
+/* ==========================
+   Home Hover Effects
+========================== */
+
+.btn,
+.btn-outline,
+.product-card,
+.category-card,
+.brand-card,
+.feature-card {
+  transition: all 0.3s ease;
+}
+
+.btn:active,
+.btn-outline:active {
+  transform: scale(0.97);
+}
+
+/* ==========================
+   Smooth Fade Animation
+========================== */
+
+.fade-up {
+  animation: fadeUp 0.7s ease forwards;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+
+    transform: translateY(35px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
+  }
+}
+
+/* ==========================
+   Image Helpers
+========================== */
+
+.hero-image img,
+.brand-card img,
+.category-card img,
+.product-card img {
+  user-select: none;
+
+  -webkit-user-drag: none;
+}
+
+/* ==========================
+   Responsive
+========================== */
+
+@media (max-width: 992px) {
+  .hero {
+    min-height: auto;
+
+    padding: 80px 0;
+  }
+
+  .hero-content {
+    min-height: auto;
+
+    gap: 40px;
+  }
+
+  .hero-text h1 {
+    max-width: 100%;
+  }
+
+  .hero-text p {
+    max-width: 100%;
+
+    margin: 20px auto 30px;
+  }
+
+  .hero-image img {
+    max-width: 420px;
+  }
+}
+
+@media (max-width: 768px) {
+  .offer-content {
+    padding: 20px 0;
+  }
+
+  .offer-content h2 {
+    font-size: 1.9rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.7rem;
+  }
+
+  .hero-buttons {
+    gap: 15px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+  }
+
+  .hero-image img {
+    max-width: 300px;
+  }
+
+  .offer-content h2 {
+    font-size: 1.6rem;
+  }
+
+  .newsletter h2 {
+    font-size: 1.5rem;
+  }
+
+  .btn,
+  .btn-outline {
+    width: 100%;
+
+    text-align: center;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+}

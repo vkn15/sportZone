@@ -1,0 +1,338 @@
+/*======================================================
+    SportsZone
+    File: css/about.css
+======================================================*/
+
+/* ===========================
+   About Section
+=========================== */
+
+.about-page {
+  padding: 70px 0;
+
+  background: #f8f9fa;
+}
+
+.about-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 50px;
+
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.about-content h2 {
+  margin-bottom: 20px;
+
+  color: #222;
+}
+
+.about-content p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin-bottom: 18px;
+}
+
+/* ===========================
+   Mission Section
+=========================== */
+
+.mission-section {
+  padding: 70px 0;
+
+  background: #ffffff;
+}
+
+.mission-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 30px;
+}
+
+.mission-card {
+  background: #f8f9fa;
+
+  padding: 35px;
+
+  text-align: center;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.mission-card i {
+  font-size: 45px;
+
+  color: #0d6efd;
+
+  margin-bottom: 20px;
+}
+
+.mission-card h3 {
+  margin-bottom: 15px;
+}
+
+.mission-card p {
+  color: #666;
+
+  line-height: 1.7;
+}
+
+/* ===========================
+   Why Choose Us
+=========================== */
+
+.why-us {
+  padding: 70px 0;
+
+  background: #f8f9fa;
+}
+
+.section-title {
+  text-align: center;
+
+  margin-bottom: 40px;
+}
+
+.features-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 25px;
+}
+
+.feature-card {
+  background: #ffffff;
+
+  text-align: center;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  transition: 0.3s;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.feature-card:hover {
+  transform: translateY(-8px);
+}
+
+.feature-card i {
+  font-size: 40px;
+
+  color: #0d6efd;
+
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  margin-bottom: 12px;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* ===========================
+   Statistics
+=========================== */
+
+.stats-section {
+  padding: 70px 0;
+
+  background: #0d6efd;
+}
+
+.stats-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.stat-card {
+  color: #ffffff;
+
+  text-align: center;
+}
+
+.stat-card h2 {
+  font-size: 2.5rem;
+
+  margin-bottom: 10px;
+}
+
+/* ===========================
+   Team
+=========================== */
+
+.team-section {
+  padding: 70px 0;
+
+  background: #ffffff;
+}
+
+.team-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+
+  gap: 30px;
+}
+
+.team-card {
+  background: #f8f9fa;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  text-align: center;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.team-card img {
+  width: 100%;
+
+  height: 280px;
+
+  object-fit: cover;
+}
+
+.team-card h3 {
+  margin: 20px 0 10px;
+}
+
+.team-card p {
+  margin-bottom: 20px;
+
+  color: #666;
+}
+
+/* ===========================
+   Testimonials
+=========================== */
+
+.testimonials {
+  padding: 70px 0;
+
+  background: #f8f9fa;
+}
+
+.testimonial-grid {
+  display: grid;
+
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  gap: 25px;
+}
+
+.testimonial-card {
+  background: #ffffff;
+
+  padding: 30px;
+
+  border-radius: 12px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.testimonial-card p {
+  color: #666;
+
+  line-height: 1.8;
+
+  margin-bottom: 20px;
+}
+
+.testimonial-card h4 {
+  color: #0d6efd;
+}
+
+/* ===========================
+   CTA
+=========================== */
+
+.cta-section {
+  padding: 70px 0;
+
+  background: #0d6efd;
+
+  text-align: center;
+
+  color: #ffffff;
+}
+
+.cta-section h2 {
+  margin-bottom: 15px;
+}
+
+.cta-section p {
+  margin-bottom: 30px;
+}
+
+.cta-btn {
+  display: inline-block;
+
+  padding: 14px 30px;
+
+  background: #ffffff;
+
+  color: #0d6efd;
+
+  text-decoration: none;
+
+  border-radius: 8px;
+
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.cta-btn:hover {
+  background: #f1f1f1;
+}
+
+/* ===========================
+   Responsive
+=========================== */
+
+@media (max-width: 992px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mission-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}
